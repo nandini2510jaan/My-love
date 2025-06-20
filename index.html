@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surprises Waiting For My Love 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(#ffafbd, #ffc3a0);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.8rem;
+      color: #fff;
+      text-shadow: 2px 2px 5px #e91e63;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .btn {
+      display: block;
+      margin: 20px auto;
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e91e63;
+    }
+
+    .surprise-box {
+      background: rgba(255, 255, 255, 0.15);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 600px;
+      font-size: 1.3rem;
+      box-shadow: 0 0 15px #fff;
+      display: none;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .heart {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      font-size: 2rem;
+      animation: float 6s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>💝 Surprises Waiting For My Love, Nandini 💝</h1>
+  <div class="container">
+    <button class="btn" onclick="reveal('s1')">🎁 Surprise #1</button>
+    <div class="surprise-box" id="s1">
+      "Tum meri har subah ho, har shaam ho, Mere Jo labo pe aaye bas wahi tum naam ho 💕"
+    </div>
+
+    <button class="btn" onclick="reveal('s2')">🎁 Surprise #2</button>
+    <div class="surprise-box" id="s2">
+      🌹 Hidden Gift: <a href="https://youtu.be/NFsEqOBG51M?si=52As8mqXi7aeyN9K" target="_blank">This song for My Love</a>
+    </div>
+
+    <button class="btn" onclick="reveal('s3')">🎁 Surprise #3</button>
+    <div class="surprise-box" id="s3">
+      💌 Hidden Love Letter: "Tum sirf meri nahi, meri har dua, har khwab, har saans mein ho."
+    </div>
+
+    <button class="btn" onclick="reveal('s4')">🎁 Surprise #4</button>
+    <div class="surprise-box" id="s4">
+      🤗 Virtual Hug Sent! Just close your eyes and feel my arms around you tightly...
+    </div>
+
+    <button class="btn" onclick="reveal('s5')">🎁 Surprise #5</button>
+    <div class="surprise-box" id="s5">
+      ✨ Magic Line: "Mujhe har janam mein sirf tum chahiye❤️.
+      tere baad mujhe aur kuchh nahi chahiye."
+      
+    </div>
+
+    <button class="btn" onclick="reveal('s6')">💍 Final Surprise</button>
+    <div class="surprise-box" id="s6">
+      💍 Will you be mine forever, My Happiness? Tum hi ho meri Jaan,tum hi ho meri khusi! 🌈❤️
+    </div>
+  </div>
+
+  <script>
+    function reveal(id) {
+      document.getElementById(id).style.display = 'block';
+      showHearts();
+    }
+
+    function showHearts() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerText = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (2 + Math.random() * 3) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 4000);
+    }
+  </script>
+</body>
+</html>

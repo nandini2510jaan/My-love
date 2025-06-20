@@ -3,137 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Surprises Waiting For My Love 💖</title>
+  <title>Romantic Shayari For My Love 💕</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(#ffafbd, #ffc3a0);
+      background: linear-gradient(to top, #090979, #ff85a2);
+      color: white;
       font-family: 'Segoe UI', sans-serif;
-      color: #fff;
-      text-align: center;
       overflow-x: hidden;
     }
-
     h1 {
-      margin-top: 40px;
-      font-size: 2.8rem;
-      color: #fff;
-      text-shadow: 2px 2px 5px #e91e63;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px #ffb6c1;
     }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 30px;
+    .shayari-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 0 20px pink;
+      font-size: 1.4rem;
+      transition: 0.4s ease;
     }
-
+    .shayari-box:hover {
+      transform: scale(1.03);
+      background: rgba(255, 255, 255, 0.15);
+    }
     .btn {
       display: block;
       margin: 20px auto;
-      background: #ff4081;
+      background: #ff69b4;
       color: white;
       border: none;
       padding: 15px 30px;
       border-radius: 50px;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       cursor: pointer;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(255,105,180,0.5);
       transition: background 0.3s ease;
     }
-
     .btn:hover {
-      background: #e91e63;
+      background: #ff1493;
     }
-
-    .surprise-box {
-      background: rgba(255, 255, 255, 0.15);
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 20px;
-      max-width: 600px;
-      font-size: 1.3rem;
-      box-shadow: 0 0 15px #fff;
-      display: none;
-      animation: fadeIn 1s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    .heart {
+    .hearts {
       position: fixed;
+      width: 100%;
+      height: 100%;
       top: 0;
-      left: 50%;
-      font-size: 2rem;
-      animation: float 6s linear infinite;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
     }
-
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 8s infinite;
+      opacity: 0.7;
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
     @keyframes float {
       0% {
-        transform: translate(-50%, 0);
-        opacity: 1;
+        transform: translateY(0) rotate(45deg);
       }
       100% {
-        transform: translate(-50%, -100vh);
-        opacity: 0;
+        transform: translateY(-100vh) rotate(45deg);
       }
     }
   </style>
 </head>
 <body>
-  <h1>💝 Surprises Waiting For My Love, Nandini 💝</h1>
-  <div class="container">
-    <button class="btn" onclick="reveal('s1')">🎁 Surprise #1</button>
-    <div class="surprise-box" id="s1">
-      "Tum meri har subah ho, har shaam ho, Mere Jo labo pe aaye bas wahi tum naam ho 💕"
-    </div>
+  <h1>💕 Shayari For My Jaan Nandini 💕</h1>
 
-    <button class="btn" onclick="reveal('s2')">🎁 Surprise #2</button>
-    <div class="surprise-box" id="s2">
-      🌹 Hidden Gift: <a href="https://youtu.be/NFsEqOBG51M?si=52As8mqXi7aeyN9K" target="_blank">This song for My Love</a>
-    </div>
-
-    <button class="btn" onclick="reveal('s3')">🎁 Surprise #3</button>
-    <div class="surprise-box" id="s3">
-      💌 Hidden Love Letter: "Tum sirf meri nahi, meri har dua, har khwab, har saans mein ho."
-    </div>
-
-    <button class="btn" onclick="reveal('s4')">🎁 Surprise #4</button>
-    <div class="surprise-box" id="s4">
-      🤗 Virtual Hug Sent! Just close your eyes and feel my arms around you tightly...
-    </div>
-
-    <button class="btn" onclick="reveal('s5')">🎁 Surprise #5</button>
-    <div class="surprise-box" id="s5">
-      ✨ Magic Line: "Mujhe har janam mein sirf tum chahiye❤️.
-      tere baad mujhe aur kuchh nahi chahiye."
-      
-    </div>
-
-    <button class="btn" onclick="reveal('s6')">💍 Final Surprise</button>
-    <div class="surprise-box" id="s6">
-      💍 Will you be mine forever, My Happiness? Tum hi ho meri Jaan,tum hi ho meri khusi! 🌈❤️
-    </div>
+  <div class="shayari-box">🌙
+    "Tujh se milke laga har khushi paas hai,<br/>
+    Tere bina lage zindagi udaas hai."
   </div>
 
+  <div class="shayari-box">
+    "Tera naam lene se hi muskurane lagta hoon,<br/>
+    Tu jo aaye khwab mein, to jeene lagta hoon."
+  </div>
+
+  <div class="shayari-box">
+    "Har pal tumhara intezaar kiya,<br/>
+    Har khushi mein tumhe yaad kiya."
+  </div>
+
+  <button class="btn" onclick="showMore()">💖 Aur Shayari Dikhao</button>
+  <button class="btn" onclick="showSurprise()">🎁 Surprise for Nandini</button>
+
+  <div id="more-shayari"></div>
+
+  <div class="hearts" id="hearts"></div>
+
   <script>
-    function reveal(id) {
-      document.getElementById(id).style.display = 'block';
-      showHearts();
+    function showMore() {
+      const extra = `
+      <div class="shayari-box">"Tere bina adhura hoon main,<br/>Tere saath hi poora hoon main."</div>
+      <div class="shayari-box">"Tu saath ho to zindagi haseen hai,<br/>Tu door ho to har khushi adhuri hai."</div>
+      <div class="shayari-box">"Teri aankhon ka jadoo chal gaya,<br/>Mujhe sirf tera deewana banaya."</div>`;
+      document.getElementById('more-shayari').innerHTML = extra;
     }
 
-    function showHearts() {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.innerText = '❤️';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = (2 + Math.random() * 3) + 's';
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 4000);
+    function showSurprise() {
+      alert("💌 Nandini, tum meri zindagi ho.\nMain har din tumse aur zyada pyaar karta hoon.\nTum meri duniya ho 🌍❤️");
     }
+
+    // Floating hearts generator
+    function createHearts() {
+      const container = document.getElementById("hearts");
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+        heart.style.top = Math.random() * 100 + "vh";
+        container.appendChild(heart);
+      }
+    }
+    createHearts();
   </script>
 </body>
 </html>
